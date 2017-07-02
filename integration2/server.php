@@ -50,5 +50,14 @@ $ws_worker->onConnect = function($connection) use (&$users)
     };
 };
 
+$ws_worker->onClose = function($connection) use(&$users)
+{
+    if(isset($users[$connection->uid]))
+    {
+        // удаляем параметр при отключении пользователя
+        unset($users[$connection->uid]);
+    }
+};
+
 // Run worker
 Worker::runAll();
