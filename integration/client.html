@@ -1,0 +1,8 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <script>
+        ws = new WebSocket("ws://127.0.0.1:8000/?user=tester01");
+        ws.onmessage = function(evt) {alert(evt.data);};
+    </script>
+</head>
+</html></source>
