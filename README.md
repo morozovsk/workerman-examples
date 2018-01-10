@@ -1,8 +1,8 @@
 Examples for simple websocket server on php https://github.com/walkor/Workerman.
 
 Examples directory:
-* integration - single daemon (tcp-server + ws-server) + script who can send personal message by clientId, userId, cookie
-* integration2 - 1 tcp-server + 4 ws-workers + script who can send personal message by clientId, userId, cookie
+* integration - single daemon (tcp-server + ws-server) + script that can send personal message by clientId, userId, cookie
+* integration2 - 1 tcp-server + 4 ws-workers + script that can send personal message by clientId, userId, cookie
 
 Run from console:
 * start: "php server.php start" or "php server.php start -d"
